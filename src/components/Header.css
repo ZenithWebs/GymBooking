@@ -1,0 +1,47 @@
+.banner{
+    background: radial-gradient(rgb(248, 191, 170), white);
+}
+.heading{
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 40px;
+    color: orangered;
+}
+.sub-heading{
+    font-size: 20px;
+    font-weight: 700;
+}
+.note{
+    font-size: 18px;
+    margin-top: 10px;
+}
+.container{
+    display: flex;
+    margin-top: 20px;
+    gap: 20px;
+}
+@media screen and (max-width: 900px) {
+    .banner{
+        flex-direction: column;
+        padding-top: 6rem;
+    }
+    .heading{
+        text-align: left;
+        font-size: 28px;
+        font-weight: 800;
+        line-height: 35px;
+    }
+    .sub-heading{
+        text-align: center;
+        font-weight: 600;
+        margin-top: 10px;
+        font-size: 18px;
+    }
+    .note{
+        text-align: center;
+        font-size: 14px;
+    }
+    .container{
+        justify-content: center;
+    }
+}

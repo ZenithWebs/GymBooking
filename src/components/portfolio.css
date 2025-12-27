@@ -1,0 +1,50 @@
+.Portfolio{
+    flex-direction: column;
+}
+.reviews{
+    width: 100%;
+    justify-content: space-between;
+}
+.reviews h3{
+    color: orangered;
+    font-size: 40px;
+}
+.reviews p{
+    color: rgb(63, 63, 63);
+}
+.project{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+.project img{
+    width: 100%;
+    object-fit: cover;
+    height: 165px;
+    margin: 10px;
+}
+.project p{
+    color: orangered;
+    font-size: 12px;
+    font-weight: 400;
+    cursor: pointer;
+}
+@media screen and (max-width: 900px) {
+    .project-wrapper{
+        display: grid;
+    }
+    .reviews{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+        grid: 20px;
+    }
+    .review-wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}

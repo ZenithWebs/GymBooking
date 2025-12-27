@@ -1,0 +1,79 @@
+.navbar{
+    display: flex;
+    padding: 0 10%;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+a{
+    color: rgb(37, 37, 37);
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 500;
+}
+a:hover{
+    color: orangered;
+}
+.logo{
+    font-family: "Pacifico", cursive;
+ font-weight: 900;
+}
+.logo span{
+    font-family: "Pacifico", cursive;
+    color: orangered;
+}
+.navlinks{
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+.social-links{
+    display: flex;
+    gap: 10px;
+}
+.social-links{
+    font-size: 24px;
+}
+.bi-list, .bi-x{
+    display: none;
+}
+.mobile-navlinks{
+    display: none;
+}
+@media screen and (max-width:950px) {
+    .navlinks, .social-links{
+        display: none;
+    }
+    .bi-list, .bi-x{
+        display: flex;
+        font-size: 28px;
+    }
+    .bi-x{
+        display: none;
+    }
+    .bi-list.open{
+        display: none;
+    }
+    .bi-x.open{
+        display: flex;
+    }
+    .mobile-navlinks{
+        display: none;
+        flex-direction: column;
+        width: 100vw;
+        padding: 20px;
+        background-color: white;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;  
+    }
+    .mobile-navlinks.open{
+        display: flex;
+    }
+    .mobile-navlinks ul{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+}

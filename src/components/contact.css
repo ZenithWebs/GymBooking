@@ -1,0 +1,71 @@
+.formcontainer{
+    display: flex;
+    align-self: center;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+    background: linear-gradient(rgb(253, 170, 139), rgb(253, 218, 206)) ;
+    border-radius: 10px;
+    width: 450px;
+}
+.formBox{
+    display: flex;
+    flex-direction: column;
+}
+.formBox label{
+    font-weight: 500;
+    font-size: 16px;
+    margin-left: 10px;
+}
+.formBox i{
+    font-size: 10px;
+}
+.input{
+    border-radius: 20px;
+    padding: 10px;
+    border: none;
+    margin-bottom: 20px;
+    outline: none;
+}
+#message{
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+}
+.btns-wrapper{
+    display: flex;
+    gap: 20px;
+    padding: 10px 20px;
+    justify-content: space-between;
+}
+.uploadBtn{
+    padding: 10px 30px;
+    border: none;
+    background: whitesmoke;
+}
+.messageBtn{
+    padding: 10px 30px;
+    border: none;
+    background: rgb(253, 93, 35);
+    cursor: pointer;
+}
+.contact-img{
+    display: flex;
+    width: 50%;
+}
+@media screen and (max-width: 900px) {
+    .formcontainer{
+        display: grid;
+        padding: 0;
+    }
+    .contact-img{
+        width: 100%;
+    }
+    .form{
+        width: 90%;
+        align-self: center;
+        margin: auto;
+    }
+}
